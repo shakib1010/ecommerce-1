@@ -68,6 +68,7 @@ body {
   position: sticky;
   left: 0;
   top: 0;
+  z-index: 999;
 }
 
 .navbar {
@@ -191,4 +192,84 @@ body {
 
 .fe-box:nth-child(6) h6 {
   background-color: #fff2e5;
+}
+
+/* FEATURED PRODUCTS */
+
+.products-1 {
+  text-align: center;
+}
+
+.products-1 .pro-container {
+  padding-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.pro {
+  width: 23%;
+  min-width: 250px;
+  border: 1px solid #cce7d0;
+  padding: 10px 12px;
+  border-radius: 25px;
+  cursor: pointer;
+  box-shadow: 20px 20px 30px rgba(0, 0, 0, .02);
+  /* text-align: left; */
+  margin: 15px 0;
+  transition: box-shadow 0.3s ease;
+  position: relative;
+}
+
+.pro:hover {
+  box-shadow: 20px 20px 30px rgba(0, 0, 0, .06);
+}
+
+.pro img {
+  width: 100%;
+  border-radius: 20px;
+}
+
+.pro .des {
+  text-align: start;
+  padding: 10px 0;
+}
+
+.pro .des span {
+  display: inline-block;
+  font-size: 11px;
+  margin-bottom: 12px;
+  color: #606063;
+}
+
+.pro .des h5 {
+  color: #1a1a1a;
+  font-size: 14px;
+}
+
+.pro .des .star i {
+  font-size: 12px;
+  color: rgb(243, 181, 25);
+}
+
+.pro .des h4 {
+  padding-top: 7px;
+  font-size: 15px;
+  font-weight: 700;
+  color: #088178;
+}
+
+.pro .cart {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 40px;
+  background-color: #e8f6ea;
+  color: #088178;
+  border: 1px solid #cce7d0;
+
+  position: absolute;
+  bottom: 10px;
+  right: 20px;
 }
