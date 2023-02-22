@@ -1,13 +1,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap");
-* {
+
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Spartan", sans-serif;
 }
 
 html {
   scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Spartan", sans-serif;
+  font-size: 16px;
 }
 
 /* Global Styles */
@@ -51,7 +58,6 @@ p {
 body {
   width: 100%;
 }
-
 
 /* Navigation */
 
@@ -107,7 +113,7 @@ body {
   background-image: url(img/hero4.png);
   height: 90vh;
   background-size: cover;
-  background-position: top 0% right 0%; 
+  background-position: top 0% right 0%;
   padding: 0 80px;
 
   display: flex;
