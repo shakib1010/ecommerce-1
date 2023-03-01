@@ -420,3 +420,58 @@ body {
   font-size: 18px;
   font-weight: 600;
 }
+
+/* NEWSLETTER */
+.newsletter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  background-image: url(img/banner/b14.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #041e42;
+}
+
+.newstext h4 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.newstext p {
+  font-size: 14px;
+  font-weight: 600;
+  color: #818ea0;
+  margin-bottom: 0;
+}
+.newstext p span {
+  color: #ffbd27;
+}
+
+
+.newsform {
+  display: flex;
+  width: 40%;
+}
+
+.newsform input {
+  padding: 14px 20px;
+  border: 1px solid transparent;
+  font-size: 14px;
+  font-family: inherit;
+  border-radius: 4px;
+  outline: none;
+  width: 100%;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.newsform button {
+  background-color: #088178;
+  color: #fff;
+  white-space: nowrap;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
