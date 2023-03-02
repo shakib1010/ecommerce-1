@@ -132,6 +132,14 @@ body {
   left: 0;
 }
 
+.mobile {
+  display: none;
+}
+
+.close {
+  display: none;
+}
+
 /* HERO */
 .hero {
   background-image: url(img/hero4.png);
@@ -450,7 +458,6 @@ body {
   color: #ffbd27;
 }
 
-
 .newsform {
   display: flex;
   width: 40%;
@@ -536,4 +543,142 @@ body {
 .footer .copyright {
   flex: 0 0 100%;
   text-align: center;
+}
+
+/* Media queries */
+
+@media screen and (max-width: 799px) {
+  /* Utilities */
+  .section-p1 {
+    padding: 40px;
+  }
+  /* NAVIGATION */
+  .navbar {
+    position: relative;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: fixed;
+    top: 0;
+    right: -300px;
+    height: 100vh;
+    width: 300px;
+    background-color: #e3e6f3;
+    box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
+    padding: 80px 0 0 10px;
+    transition: 0.3s;
+  }
+
+  .mobile {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    color: #1a1a1a;
+  }
+
+  .mobile i {
+    font-size: 24px;
+  }
+
+  .mobile a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  /* .sm-banner {
+    flex-direction: column;
+  }
+
+  .banner3 {
+    flex-wrap: wrap;
+  }
+
+  .banner3 .banner-box {
+    background-position: top;
+  } */
+
+  .active {
+    right: 0;
+  }
+
+  .close {
+    display: block;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 32px;
+    color: #222;
+  }
+
+  .lg-bag {
+    display: none;
+  }
+
+  /* HERO SECTION */
+
+  .hero {
+    height: 70vh;
+    background-position: top 30% right 30%;
+    background-repeat: no-repeat;
+  }
+
+  /* FEATURE SECTION */
+  .features {
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .features .fe-box {
+    margin: 0;
+  }
+
+  /* FEATURE PRODUCTS */
+  .products-1 .pro-container {
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .pro {
+    margin: 0;
+  }
+
+  /* SECTION BANNER */
+  .banner {
+    padding: 40px 0;
+  }
+
+  .banner h2 {
+    font-size: 32px;
+  }
+
+  .sm-banner {
+    flex-direction: column;
+  }
+  /* SECTION BANNER LARGE */
+  .sm-banner .banner-box {
+    flex: 1 0 100%;
+    background-position: top;
+    height: 40vh;
+  }
+
+  /* SECTION OFFER BANNER */
+  .banner3 {
+    flex-wrap: wrap;
+  }
+
+  .banner3 .banner-box {
+    flex: 1 1 48%;
+    padding: 20px;
+    height: auto;
+    background-position: top;
+  }
+
+  /* NEWSLETTER */
+  .section-p1 {
+    gap: 10px;
+  }
+
+  .newsform {
+    width: 70%;
+  }
 }
