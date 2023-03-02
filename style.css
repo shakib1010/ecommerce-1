@@ -389,6 +389,10 @@ body {
   border: 1px solid #088178;
 }
 
+.sm-banner .banner-box p {
+  color: #fff;
+}
+
 /* TEXT banner */
 
 .banner3 {
@@ -680,5 +684,58 @@ body {
 
   .newsform {
     width: 70%;
+  }
+}
+
+/* Mobile device media queries */
+
+@media screen and (max-width: 477px) {
+  /* GENERAL */
+  h1 {
+    font-size: 38px;
+  }
+  h2 {
+    font-size: 32px;
+  }
+
+  .section-p1 {
+    padding: 20px;
+  }
+
+  /* NAVIGATION */
+  .header {
+    padding: 10px 20px;
+  }
+
+  /* HERO */
+  .hero {
+    background-position: 55%;
+    padding: 0 20px;
+  }
+
+  /* SECTION FEATURES */
+  .fe-box {
+    width: 150px;
+  }
+
+  /* FEATURED PRODUCT */
+
+  .pro {
+    width: 100%;
+  }
+
+  /* BANNER 1 */
+
+  .section-p1 {
+    gap: 20px;
+  }
+
+  /* NEWSLETTER */
+  .newsform {
+    width: 100%;
+  }
+
+  .newsletter {
+    padding: 40px 20px;
   }
 }
